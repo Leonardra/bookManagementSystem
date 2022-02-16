@@ -13,7 +13,8 @@ type Book struct{
 	BookDescription string `json:"book_description omitempty" bson:"book_description omitempty"`
 	Tags []string `json:"tags" bson:"tags"`
 	Quantity int  `json:"quantity" bson:"quantity"`
-	ReleaseDate time.Time `json:"release_date" bson:"release_date"`
+	ReleaseDate string `json:"release_date" bson:"release_date"`
+	DateAdded time.Time `json:"date_added" bson:"date_added"`
 }
 
 type Author struct{
